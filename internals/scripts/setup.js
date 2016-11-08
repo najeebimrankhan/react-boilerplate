@@ -48,7 +48,8 @@ function initGit(callback) {
  * Deletes a file in the current directory
  */
 function deleteFileInCurrentDir(file, callback) {
-  fs.unlink(path.join(__dirname, file), callback);
+  //disable delete of Setup file
+  //fs.unlink(path.join(__dirname, file), callback);
 }
 
 /**
